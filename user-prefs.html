@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>user-pref</title>
+</head>
+
+<body onload="onInit()">
+    <h1>USER-PREF PAGE</h1>
+    <form onsubmit="onSetUserPref(event)">
+        <label for="background-color">Choose your background color</label>
+        <input type="color" name="background-color" id="background-color"> <br>
+        <label for="text-color">Choose your TEXT color</label>
+        <input type="color" name="text-color" id="text-color"> <br>
+        <label for="birth-date">Whats your date of birth?</label>
+        <input type="datetime" name="birth-date" id="birth-date" placeholder="dd/mm/yyyy" required> <br>
+        <label for="email">Enter your Email</label>
+        <input type="email" name="email" id="email" placeholder="example@yahoo.com" required> <br>
+        <label for="age">Enter your age</label>
+        <input type="range" min="18" max="100" name="age" id="age" onchange="this.title=this.value">
+        <br><button onclick="checkAge()">Set</button>
+    </form>
+    <p>awalalal</p>
+
+
+
+
+
+
+    <script src="js/services/utilServices.js"></script>
+    <script src="js/services/storage.services.js"></script>
+    <script src="js/services/userPrefService.js"></script>
+    <script src="js/services/placeService.js"></script>
+    <script src="/js/services/model.js"></script>
+    <script src="/js/controller.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
+
+
+<!-- user-prefs.html
+Here we will use a <form> to get the user preferences and save them to 
+localStorage.
+The application should use those CSS preferences and show the pages 
+accordingly.
+Step 1 - Colors
+Use HTML5 color <input> to let the user set its background and text color of the 
+home page, keep in localStorage and respect his choices in next visits.
+Step 2 – Date and Time
+Use HTML5 date and time <input>s to let the user set his exact birth time, when he 
+does show a random astrological forecast in the home page (from an array of 3 
+ready-made forecasts)
+Step 3 – Wrap in a form
+Put those inputs in a <form>, and when submit, use a service to keep them in a 
+localstorage object: userData 
+TIP: you will need event.preventDefault in the onsubmit event handler.
+Step 4 – Add some more inputs
+• Add a required email <input>
+• Add a range <input> to let the user select his age: 18->120
+o Bonus: validate it matches his birth year -->

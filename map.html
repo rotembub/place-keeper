@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>map</title>
+</head>
+
+<body onload="onInit()">
+    <h1>MAP PAGE</h1>
+
+
+
+
+    <script src="js/services/utilServices.js"></script>
+    <script src="js/services/storage.services.js"></script>
+    <script src="js/services/userPrefService.js"></script>
+    <script src="js/services/placeService.js"></script>
+    <script src="/js/services/model.js"></script>
+    <script src="/js/controller.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
+
+<!-- Here we will show a map and allow users to manage their places.
+Tips: 
+• Use the 'create Google Api' doc to create an API key and secure it. 
+• This ex involves self learning and handling new documentation that we 
+haven’t met yet.
+• Self learning new technologies is a big part of being a pro programmer! 
+Steps
+• Show a map centered at Eilat, when user clicks the button 
+(search for "my location png" in google), get his current location 
+and center the map accordingly.
+o Something like:
+map.setCenter(new google.maps.LatLng( 45, 19 ) 
+• When a user clicks on the map, the user is prompted to enter a 
+name and the clicked location is saved to a places array in the 
+localStorage.
+o BONUS: use inputs
+• Show the list and allow the user to remove a place.
+• Use a place-service that manages the place entity, a place object
+looks like that:
+{id: 123, lat: 32.1416, lng: 34.831213, name: 'Pukis house'}
+• Add navigation links to all pages.
+• Bonus: Create more pages and try out some HTML5 features we 
+have covered -->
